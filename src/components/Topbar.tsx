@@ -90,7 +90,7 @@ const Topbar: React.FC = () => {
             <a
               key={link.label}
               href={link.href}
-              ref={el => linksRef.current[idx] = el}
+              ref={el => { linksRef.current[idx] = el; }}
               className={`quicklink${hoveredIdx === idx ? ' hovered' : ''}`}
               style={{
                 margin: '0 12px',
